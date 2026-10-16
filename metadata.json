@@ -1,0 +1,6 @@
+{
+  "name": "Sistema de Tickets de Soporte Técnico",
+  "description": "Aplicación web de gestión de tickets de soporte técnico con dashboard, gestión geográfica, control empresarial, reportería en Excel y trazabilidad de atención en base de datos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

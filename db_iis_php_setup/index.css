@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;650;700;800&family=JetBrains+Mono:wght@400;550;700&family=Playfair+Display:ital,wght@1,400;1,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-serif: "Playfair Display", "Georgia", ui-serif, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  @apply font-sans bg-[#E4E3E0] text-[#141414] selection:bg-[#141414] selection:text-[#E4E3E0];
+}
+
+/* Custom classic border styles matching raw tech grid feel */
+.tech-border {
+  border: 1px solid #141414;
+}
+
+.tech-kpi {
+  border: 1px solid #141414;
+  background: rgba(255, 255, 255, 0.25);
+  transition: all 0.2s;
+}
+
+.tech-kpi:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.tech-row {
+  border-bottom: 1px solid #141414;
+  transition: all 0.15s ease-in-out;
+}
+
+.tech-row:hover {
+  background-color: #141414 !important;
+  color: #E4E3E0 !important;
+}
+
+.tech-row:hover a,
+.tech-row:hover span,
+.tech-row:hover p,
+.tech-row:hover div,
+.tech-row:hover button {
+  color: inherit !important;
+}
+
+.tech-pill {
+  font-size: 10px;
+  padding: 2px 8px;
+  border: 1px solid #141414;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media print {
+  aside,
+  header,
+  .no-print,
+  .print-hidden,
+  button,
+  input,
+  select,
+  textarea {
+    display: none !important;
+  }
+
+  body, .flex-1, main, .main-content {
+    background: white !important;
+    color: black !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  .tech-border {
+    border: 1px solid black !important;
+  }
+}
