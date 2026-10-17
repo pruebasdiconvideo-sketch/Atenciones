@@ -1,9 +1,0 @@
-{
-    "smtp_host": "smtp.gmail.com",
-    "smtp_port": 587,
-    "smtp_user": "jefesot@gmail.com",
-    "smtp_pass": "ljpf wpyv bzgq wfbs",
-    "smtp_sender": "jefesot@gmail.com",
-    "smtp_security": "TLS",
-    "_comment": "FIX v2.72 - La contraseña de aplicacion de Gmail puede tener espacios. El PHP los elimina automaticamente antes de enviar."
-}
